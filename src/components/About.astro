@@ -2,67 +2,98 @@
 // About.astro
 const points = [
   {
-    title: "Visión Integral",
-    description: "Cubrimos desde la arquitectura en la nube hasta el soporte técnico diario.",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 mt-1 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>`
+    title: "Tranquilidad Operativa",
+    description:
+      "Nos encargamos de todo, desde la arquitectura hasta el soporte diario. Delegá la técnica en nosotros y recuperá tu capacidad de enfoque.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 mt-1 flex-shrink-0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
   },
   {
-    title: "Experiencia Comprobada",
-    description: "Acostumbrados a trabajar en entornos de alto rendimiento y con equipos internacionales.",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 mt-1 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>`
+    title: "Rentabilidad Basada en Datos",
+    description:
+      "Ingeniería aplicada a tus métricas. Cada línea de código está pensada para reducir costos operativos y aumentar tus ganancias.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 mt-1 flex-shrink-0"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
   },
   {
-    title: "Innovación Continua",
-    description: "Implementamos tecnologías modernas (IA, automatizaciones) para que tu infraestructura nunca quede obsoleta.",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 mt-1 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>`
-  }
+    title: "Tu Tiempo es el Activo Real",
+    description:
+      "Optimizamos procesos para devolverte horas. Menos microgestión técnica significa más tiempo para tu familia, amigos y visión estratégica.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 mt-1 flex-shrink-0"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+  },
 ];
 ---
 
 <section id="nosotros" class="py-24 bg-slate-50 relative overflow-hidden">
-  <!-- Decorative background elements -->
-  <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full blur-3xl opacity-20 bg-blue-400 pointer-events-none"></div>
-  <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full blur-3xl opacity-20 bg-blue-600 pointer-events-none"></div>
+  <div
+    class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full blur-3xl opacity-20 bg-blue-400 pointer-events-none"
+  >
+  </div>
+  <div
+    class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full blur-3xl opacity-20 bg-blue-600 pointer-events-none"
+  >
+  </div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      
-      <!-- Text Content -->
       <div>
-        <span class="text-blue-600 font-semibold tracking-wider uppercase text-sm mb-4 block">Sobre Nosotros</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-blue-950 tracking-tight mb-6">
-          Más que código: ingeniería aplicada a los resultados de tu negocio.
+        <span
+          class="text-blue-600 font-semibold tracking-wider uppercase text-sm mb-4 block"
+          >Sobre Nosotros</span
+        >
+        <h2
+          class="text-3xl md:text-4xl font-extrabold text-blue-950 tracking-tight mb-6"
+        >
+          Ingeniería para que tu negocio escale y vos recuperes tu libertad.
         </h2>
-        
+
         <div class="text-slate-600 space-y-6 text-lg leading-relaxed mb-8">
           <p>
-            En AEG entendemos que la tecnología no debe ser un obstáculo, sino el motor que impulse tu crecimiento. Liderados por <strong class="text-slate-800">Cristian Nahuel Alegre Bustos</strong>, acercamos soluciones de ingeniería de software de nivel internacional a empresas que buscan escalar sus operaciones de forma segura y eficiente.
+            En AEG entendemos que la tecnología no debe ser una carga, sino el
+            puente hacia la vida que querés liderar. Bajo la dirección de <strong
+              class="text-slate-800">Cristian Nahuel Alegre Bustos</strong
+            >, aplicamos estándares de software internacionales para transformar
+            operaciones lentas en sistemas de alto rendimiento.
           </p>
           <p>
-            No nos limitamos a escribir líneas de código; analizamos el impacto real en tus métricas. Ya sea modernizando sistemas, automatizando flujos de trabajo que ahorran cientos de horas, o brindando soporte IT a equipos remotos, somos el socio tecnológico que tu empresa necesita para dar el siguiente paso.
+            No solo entregamos código; entregamos resultados que se ven en tu
+            balance mensual y en tu agenda semanal. Al automatizar flujos y
+            modernizar infraestructuras, <b
+              >ahorramos cientos de horas manuales</b
+            >
+            para que puedas dedicarte a lo que realmente importa: hacer crecer tu
+            empresa o disfrutar tiempo con amigos sin alertas en el celular.
           </p>
         </div>
 
-        <!-- Key Points -->
         <ul class="space-y-5">
-          {points.map((point) => (
-            <li class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all">
-              <div set:html={point.icon} />
-              <div>
-                <strong class="text-slate-900 block mb-1">{point.title}</strong>
-                <span class="text-slate-600 text-sm">{point.description}</span>
-              </div>
-            </li>
-          ))}
+          {
+            points.map((point) => (
+              <li class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all">
+                <div set:html={point.icon} />
+                <div>
+                  <strong class="text-slate-900 block mb-1">
+                    {point.title}
+                  </strong>
+                  <span class="text-slate-600 text-sm">
+                    {point.description}
+                  </span>
+                </div>
+              </li>
+            ))
+          }
         </ul>
       </div>
 
-      <!-- Image / Graphic placeholder -->
-      <div class="relative h-full min-h-[500px] lg:min-h-full rounded-3xl overflow-hidden bg-white shadow-2xl border border-slate-200 p-2 lg:p-4 perspective-1000">
-        <!-- Abstract representation of code/engineering since we don't have an image -->
-        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-blue-950 rounded-[1.25rem] lg:rounded-[1.5rem] flex items-center justify-center overflow-hidden">
-          <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:2rem_2rem]"></div>
-          
+      <div
+        class="relative h-full min-h-[500px] lg:min-h-full rounded-3xl overflow-hidden bg-white shadow-2xl border border-slate-200 p-2 lg:p-4 perspective-1000"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-slate-900 to-blue-950 rounded-[1.25rem] lg:rounded-[1.5rem] flex items-center justify-center overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:2rem_2rem]"
+          >
+          </div>
+
           <div class="p-8 w-full">
             <div class="flex gap-2 mb-6">
               <div class="w-3 h-3 rounded-full bg-red-400"></div>
@@ -70,20 +101,33 @@ const points = [
               <div class="w-3 h-3 rounded-full bg-green-400"></div>
             </div>
             <div class="space-y-4 font-mono text-sm text-blue-200/70">
-              <p>const <span class="text-blue-400">AEG</span> = new <span class="text-indigo-400">EngineeringGroup</span>();</p>
-              <p>await AEG.<span class="text-sky-400">analyze</span>(business.metrics);</p>
-              <p class="text-slate-400">// Automating workflows to save hours</p>
-              <p>AEG.<span class="text-sky-400">optimize</span>(&#123;</p>
-              <p class="pl-4">scale: <span class="text-purple-400">true</span>,</p>
-              <p class="pl-4">innovation: <span class="text-green-400">"continuous"</span>,</p>
-              <p class="pl-4">support: <span class="text-yellow-300">"24/7"</span></p>
+              <p>
+                const <span class="text-blue-400">AEG</span> = new <span
+                  class="text-indigo-400">EngineeringGroup</span
+                >();
+              </p>
+              <p>
+                const <span class="text-sky-400">timeSaved</span> = await AEG.automate(business.tasks);
+              </p>
+              <p class="text-slate-400">// Impact on your daily life</p>
+              <p><span class="text-blue-400">CEO</span>.enjoy(&#123;</p>
+              <p class="pl-4">
+                focus: <span class="text-green-400">"Business Growth"</span>,
+              </p>
+              <p class="pl-4">
+                freeTime: <span class="text-sky-400">timeSaved</span>,
+              </p>
+              <p class="pl-4">
+                qualityLife: <span class="text-purple-400">true</span>
+              </p>
               <p>&#125;);</p>
-              <p class="mt-8 text-white font-bold animate-pulse text-lg">> System ready.</p>
+              <p class="mt-8 text-white font-bold animate-pulse text-lg">
+                > Scalability unlocked.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
   </div>
 </section>
