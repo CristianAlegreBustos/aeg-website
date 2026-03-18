@@ -36,9 +36,11 @@ const services = [
       >
         Nuestras Soluciones
       </h2>
-      <p class="text-lg text-slate-600">
-        Cubrimos todo el ciclo de vida tecnológico de tu empresa.
-      </p>
+      <div class="h-14 sm:h-8 flex items-center justify-center text-center">
+        <p id="dynamic-subtitle" class="text-lg text-slate-600 transition-opacity duration-500 opacity-100">
+          Cuidamos tu tiempo.
+        </p>
+      </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
@@ -70,3 +72,40 @@ const services = [
     </div>
   </div>
 </section>
+
+<script>
+  const phrases = [
+    "Cuidamos tu tiempo.",
+    "Protegemos tu dinero.",
+    "Potenciamos tu negocio.",
+    "Aseguramos tu bienestar.",
+    "Cubrimos todo el ciclo de vida tecnológico de tu empresa."
+  ];
+
+  const el = document.getElementById('dynamic-subtitle');
+  if (el) {
+    let currentIndex = 0;
+    
+    const changeText = () => {
+      // Ocultar texto (fade out)
+      el.classList.remove('opacity-100');
+      el.classList.add('opacity-0');
+      
+      setTimeout(() => {
+        // Actualizar texto y mostrar (fade in)
+        currentIndex = (currentIndex + 1) % phrases.length;
+        el.textContent = phrases[currentIndex];
+        
+        el.classList.remove('opacity-0');
+        el.classList.add('opacity-100');
+        
+        // Mantener la última frase por 5 segundos en lugar de 3 antes de reiniciar el ciclo
+        const nextDelay = currentIndex === phrases.length - 1 ? 5000 : 3000;
+        setTimeout(changeText, nextDelay);
+      }, 500); // 500ms para coincidir con el 'duration-500' de Tailwind
+    };
+    
+    // Iniciar el ciclo después de 3 segundos
+    setTimeout(changeText, 3000);
+  }
+</script>
