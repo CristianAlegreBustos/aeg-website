@@ -41,3 +41,19 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://alegre.e
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, canonicalURL)} />
+
+<!-- JSON-LD (Schema.org) -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Alegre Engineering Group",
+  "image": new URL(image, canonicalURL).toString(),
+  "url": canonicalURL.toString(),
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Santa Fe",
+    "addressRegion": "Santa Fe",
+    "addressCountry": "AR"
+  },
+  "description": description
+})} />
