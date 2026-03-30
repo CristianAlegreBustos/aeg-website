@@ -1,5 +1,6 @@
 ---
 // Footer.astro
+import logo from "../assets/logo/logo_navbar.svg";
 ---
 
 <footer
@@ -10,10 +11,15 @@
       <!-- Columna 1: Marca y Misión -->
       <div class="md:col-span-5 lg:col-span-4">
         <a
-          href="#"
-          class="inline-block text-2xl font-black text-white tracking-tighter mb-6"
+          href="/"
+          class="inline-flex items-center gap-2 text-2xl font-black text-white tracking-tighter mb-6 hover:opacity-90 transition-opacity"
         >
-          AEG<span class="text-blue-500">.</span>
+          <img
+            src={logo.src}
+            alt="Alegre Engineering Group Logo"
+            class="h-8 w-auto"
+          />
+          <span>AEG<span class="text-blue-500">.</span></span>
         </a>
         <p class="text-slate-400 leading-relaxed max-w-sm">
           Ingeniería de software y automatización diseñada para que tu negocio
